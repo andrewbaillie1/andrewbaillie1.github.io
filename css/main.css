@@ -861,7 +861,7 @@ textarea,
 		margin: 0 .2em; display: inline-block; 
 		}
 	.service p {
-        margin-top: .2em; margin-left: 68px; margin-bottom: 0; opacity: .5;
+        margin-top: .2em; margin-left: 68px; margin-bottom: 0; opacity: .5; text-align: center;
 		}
 	.service h4 {
         margin-top: 0; margin-left: 68px; margin-bottom: .3em; font-size: 12px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase;
