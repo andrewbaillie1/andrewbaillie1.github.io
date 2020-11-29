@@ -1,6 +1,6 @@
 /* CONTENT ALIGNMENT */
 .aligncenter, .alignnone, .alignright, .alignleft {
-    display: block; margin: 1.6em auto; clear: both;
+    display: block; margin: 1em auto; clear: both;
 	}
 .wp-caption {
 	color:#555;
