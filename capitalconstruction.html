@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Andrew Baillie Portfolio" content="width=device-width, initial-scale=1.0">
+        <title>Andrew Baillie</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto &display=swap');
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel="stylesheet"/>
+
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <div class="nav-wrapper"></div>
+            <div class="header-navbar">
+                <nav class="navbar">
+                    <div class="navbar__container">
+                            <a href="/" id="navbar__logo">
+                                <img src="AJDBlogo.png" alt="AJDB Logo"></img>
+                            </a>
+                        <div class="navbar__toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navbar__menu">
+                            <li class="navbar__item">
+                                <a href="index.html" class="navbar__links">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="about.html" class="navbar__links current-page">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#Contact" class="navbar__links">Contact</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="Andrew Baillie - CV.pdf" class="navbar__links">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+</div>
+<div class="header_container">
+
+</div>
+
+<div class="aboutpage_container">
+    <div class="Portfolio-wrapper">
+        <div class="aboutme-item">
+            <h5>Under Construction</h5>
+            <p> Under Construction. This page is currently under construction. I will instruct you to when you can view this page. But for now this page is under construction. Thats not to say it will always be under construction. It's just under construction for the time being. Once it is no longer under construction I will update it, removing the header that says it is under construction. I have a number of other pages that are not under construction. At one point they were under construction but I updated them so they are no longer under construction.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+        <div ID="Contact" class="Contact_container"><div class="Portfolio-wrapper">
+            <h3>CONTACT</h3>
+            <div class="portfolio-item">
+                <div class="contacttext">
+                    <a class="contactheader" href="mailto:andrewbaillie1@gmail.com">
+                        andrewbaillie1@gmail.com </a>
+                    <p>Feel free to get in touch with me. I'm always keen to colloborate on all things UX and content creation.</p>
+                    <div class=socialflex>
+                    <a class="socialbox" href="mailto:andrewbaillie1@gmail.com" target="_blank" rel="noopener noreferrer"><span class="iconmail"></span></a>
+                    <a class="socialbox"href="https://www.linkedin.com/in/andrew-baillie/" target="_blank" rel="noopener noreferrer"><span class="iconlinkedin"></span></a>
+                    <a class="socialbox" href="https://github.com/andrewbaillie1" target="_blank" rel="noopener noreferrer"><span class="icongithub"></span></a>
+                    <a class="socialbox" href="https://www.m.me/100003599262806/" target="_blank" rel="noopener noreferrer"><span class="iconmessenger"></span></a>
+                    </div>
+
+                </div>
+            
+            </div></div></div>
+
+<script>
+var navbar = document.querySelector('.header-navbar')
+
+window.onscroll = function () { // pageYOffset or scrollY
+    if (window.pageYOffset > 500) {
+        navbar.classList.add('scrolled')
+    } else {
+        navbar.classList.remove('scrolled')
+    }
+}
+</script>
+
+<script>
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+
+</script>
+
+</body>

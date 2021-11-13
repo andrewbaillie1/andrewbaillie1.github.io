@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Andrew Baillie Portfolio" content="width=device-width, initial-scale=1.0">
+        <title>Andrew Baillie</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto &display=swap');
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel="stylesheet"/>
+
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <div class="nav-wrapper"></div>
+            <div class="header-navbar">
+                <nav class="navbar">
+                    <div class="navbar__container">
+                            <a href="/" id="navbar__logo">
+                                <img src="AJDBlogo.png" alt="AJDB Logo"></img>
+                            </a>
+                        <div class="navbar__toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navbar__menu">
+                            <li class="navbar__item">
+                                <a href="index.html" class="navbar__links current-page">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="about.html" class="navbar__links">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#Contact" class="navbar__links">Contact</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="Andrew Baillie - CV.pdf" class="navbar__links">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+</div>
+<div class="header_container">
+<div class="header_text">
+    <h1>Hi, I'm Andrew.</h1>
+    <p>I’m a Process Engineer currently working at Jacobs.</p>
+    <a id="checkwork" href="#mywork">
+        Check out my Work</a>
+</div>
+<div class="header_photo">
+    <img src="me.png"></img></div></div>
+<div class="portfolio_container"><div class="Portfolio-wrapper">
+<h3>PROJECTS</h3>
+<div ID="mywork" class="portfolio-item">
+    <div class="portfoliotext">
+        <h5>
+            Reducing Capital Construction Costs</h5>
+        <p>Building an app to reduce time waste in the research phase of construction projects.</p>
+        <a class="portfoliobutton" href="capitalconstruction.html">Read More</a>
+    </div>
+    <div class="portfoliophoto">
+        <a href="capitalconstruction.html">
+            <img src="SVCD.png" alt="Photo of my porfolio project">
+        </img>
+        </a>
+    </div>
+
+</div></div></div>
+<div class="portfolio_container"><div class="Portfolio-wrapper">
+    <div ID = "waterq" class="portfolio-item">
+        <div class="portfoliophoto">
+            <a href="waterquality.html">
+                <img src="SEPA.png" alt="Photo of my porfolio project">
+            </img>
+            </a>
+        </div>
+        <div class="portfoliotext">
+            <h5>
+                Water Quality Data</h5>
+            <p>A project supported by internal communications to help users access and process water quality data from the Scottish Environmental Protection Agency (SEPA). Currently under development.</p>
+            <a class="portfoliobutton" href="waterquality.html">
+                Read More</a>
+        </div>
+
+    
+    </div></div></div>
+    <div class="portfolio_container"><div class="Portfolio-wrapper">
+        <div class="portfolio-item">
+            <div class="portfoliotext">
+                <h5>
+                    Re-opening the offices during the Covid-19 Pandemic</h5>
+                <p>Creating an informative and engaging experience through various media forms for people returning to the offices.</p>
+                <a class="portfoliobutton" href="officereopen.html">
+                    Read More</a>
+            </div>
+            <div class="portfoliophoto">
+                <a href="officereopen.html">
+                    <img src="office-reopening.png" alt="Photo of my porfolio project">
+                </img>
+                </a>
+            </div>
+        
+        </div></div></div>
+
+        <div ID="Contact" class="Contact_container"><div class="Portfolio-wrapper">
+            <h3>CONTACT</h3>
+            <div class="portfolio-item">
+                <div class="contacttext">
+                    <a class="contactheader" href="mailto:andrewbaillie1@gmail.com">
+                        andrewbaillie1@gmail.com </a>
+                    <p>Feel free to get in touch with me. I'm always keen to colloborate on all things UX and content creation.</p>
+                    <div class=socialflex>
+                    <a class="socialbox" href="mailto:andrewbaillie1@gmail.com" target="_blank" rel="noopener noreferrer"><span class="iconmail"></span></a>
+                    <a class="socialbox"href="https://www.linkedin.com/in/andrew-baillie/" target="_blank" rel="noopener noreferrer"><span class="iconlinkedin"></span></a>
+                    <a class="socialbox" href="https://github.com/andrewbaillie1" target="_blank" rel="noopener noreferrer"><span class="icongithub"></span></a>
+                    <a class="socialbox" href="https://www.m.me/100003599262806/" target="_blank" rel="noopener noreferrer"><span class="iconmessenger"></span></a>
+                    </div>
+
+                </div>
+            
+            </div></div></div>
+
+<script>
+var navbar = document.querySelector('.header-navbar')
+
+window.onscroll = function () { // pageYOffset or scrollY
+    if (window.pageYOffset > 500) {
+        navbar.classList.add('scrolled')
+    } else {
+        navbar.classList.remove('scrolled')
+    }
+}
+</script>
+
+<script>
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+
+</script>
+
+</body>
